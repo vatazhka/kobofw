@@ -172,17 +172,17 @@ select {
 		body += """<p>Queries data feed which eReaders use.</p>\n"""
 		
 		body += """<form action=\"/check\" method=\"get\">"""
-		body += """<p><select name=\"ereader\"><optgroup label=\"ereader\">"""
+		body += """<p><select name=\"ereader\">"""
 		for i in eReaders:
 			if len(i[1]) > 0:
 				body += """<option value=\"""" + i[1] + """\">""" + i[0] + """</option>"""
 		body += """</optgroup></select></p>\n"""
 		
-		body += """<p><select name=\"affiliate\"><optgroup label=\"affiliate\">"""
+		body += """<p><select name=\"affiliate\">"""
 		for i in affiliates:
 			if len(i[1]) > 0:
 				body += """<option value=\"""" + i[1] + """\">""" + i[0] + """</option>"""
-		body += """</optgroup></select></p>\n"""
+		body += """</select></p>\n"""
 		body += """<p><input type=\"submit\" value=\"Check\"></p></form>\n"""
 		
 		# end default route

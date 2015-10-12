@@ -141,9 +141,19 @@ select {
 		body += """<p>Please note that the links below have been directly provided by Kobo - I do not host any firmware downloads!</p>\n"""
 		
 		affiliates = [
-			['Kobo', 'kobo'],
 			['Beta', 'beta'],
-			['Best Buy Canada', 'bestbuyca']
+			['Kobo', 'kobo'],
+			['Best Buy', 'bestbuy'],
+			['Best Buy Canada', 'bestbuyca'],
+			['WHSmith', 'whsmith'],
+			['Walmart US', 'walmartus'],
+			['Indigo', 'indigo'],
+			['Fnac', 'fnac'],
+			['Mondadori', 'mondadori'],
+			['Livraria Cultura', 'livrariacultura'],
+			['La Central', 'lacentral'],
+			['Libris BLZ', 'librisblz'],
+			['Rakuten', 'rakuten']
 		]
 		
 		eReaders = [

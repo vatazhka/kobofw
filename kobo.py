@@ -154,7 +154,7 @@ select {
 			['Livraria Cultura', 'livrariacultura'],
 			['La Central', 'lacentral'],
 			['Libris BLZ', 'librisblz'],
-			['Rakuten', 'rakuten']
+			['Rakuten', 'rakutenbooks']
 		]
 		
 		eReaders = [

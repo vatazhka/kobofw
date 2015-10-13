@@ -117,7 +117,9 @@ select {
 		t = KoboFirmware(eReader, affiliate)
 		
 		try:
-			body += """<h2>Kobo firmware</h2>"""
+			import re
+			version = re.search('kobo-update-([0-9]+)\.([0-9]+)\.([0-9]+)\.zip$', escape(t.upgrade.encode('utf-8')))
+			body += """<h2>The current firmware version is """ + version.group(1) + """.""" + version.group(2) + """.""" + version.group(3) + """.</h2>"""
 			body += """<p>Manual updates are easy to perform, but please read <a href=\"""" + escape(t.releaseNote.encode('utf-8')) + """\">release notes</a> first!</p>\n"""
 			body += """<ul><li>Download <a href=\"""" + escape(t.upgrade.encode('utf-8')) + """\">this</a> file.</li>"""
 			body += """<li>Unpack the <em>.zip</em> file you just downloaded.</li>"""
@@ -169,7 +171,7 @@ select {
 			['Kobo Touch 2.0', '00000000-0000-0000-0000-000000000372']
 		]
 		
-		body += """<p>Queries data feed which eReaders use.</p>\n"""
+		body += """<p>This webapp queries data feed which eReaders use.</p>\n"""
 		
 		body += """<form action=\"/check\" method=\"get\">"""
 		body += """<p><select name=\"ereader\">"""

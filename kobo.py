@@ -145,17 +145,6 @@ select {
 		affiliates = [
 			['Beta', 'beta'],
 			['Kobo', 'kobo'],
-			['Best Buy US', 'bestbuyus'],
-			['Best Buy CA', 'bestbuyca'],
-			['Walmart US', 'walmartus'],
-			['Walmart CA', 'walmartus'],
-			['Indigo', 'indigo'],
-			['WHSmith', 'whsmith'],
-			['Fnac', 'fnac'],
-			['Mondadori', 'mondadori'],
-			['Livraria Cultura', 'livrariacultura'],
-			['La Central', 'lacentral'],
-			['Libris BLZ', 'librisblz'],
 			['Rakuten', 'rakutenbooks']
 		]
 		
@@ -189,7 +178,7 @@ select {
 		
 		# end default route
 		
-	body += """<p class=\"copyright\">Copyright &copy; 2015 by <a href=\"http://www.mobileread.com/forums/member.php?u=233967\">vatazhka</a> &reg;</p>\n"""
+	body += """<p class=\"copyright\">Copyright &copy; 2015 and 2016 by <a href=\"http://www.mobileread.com/forums/member.php?u=233967\">vatazhka</a> &reg;</p>\n"""
 	body += """</body>
 </html>"""
 	
